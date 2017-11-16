@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<title>MGS - sup1-02</title>
+		<!-- Bootstrap 3.3.7 -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+				<a class="navbar-brand col-sm-3 col-md-2" href="#">
+					<img src="img/DIRWINGS_logo.png" height="30" alt="DIRWINGS_logo">
+				</a>
+				<div class="navbar-right-menu">
+					<a class="nav_user" href="#">
+		              <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+		              <span>伊藤　翔太</span>
+		              <span>／社長</span>
+		            </a>
+		            <span class="nav_border">|</span>
+					<a class="logout_link" href="#">
+		              <span>ログアウト</span>
+		            </a>
+				</div>
+			</nav>
+		</header>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="d-sm-block sidebar bk-dark">
+					<ul class="nav flex-column bk-deepdark">
+						<li class="nav-item">
+							<a class="nav-link text-ccc active" href="#">
+								<i class="fa fa-dashboard"></i><span class="menu-text">トップ</span>
+							</a>
+						</li>
+						<li class="nav-item treeview">
+							<a class="nav-link text-ccc" href="#">
+								<i class="fa fa-tasks" aria-hidden="true"></i><span class="menu-text">営業管理</span>
+								<span class="pull-right-container">
+					              	<i class="fa fa-angle-left pull-right"></i>
+					            </span>
+							</a>
+							<ul class="nav flex-column treeview-menu bk-dark">
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">案件管理</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">仕入先管理</a></li>
+				          	</ul>
+						</li>
+						<li class="nav-item treeview">
+							<a class="nav-link text-ccc" href="#">
+								<i class="fa fa-barcode" aria-hidden="true"></i><span class="menu-text">商品管理</span>
+								<span class="pull-right-container">
+					              	<i class="fa fa-angle-left pull-right"></i>
+					            </span>
+							</a>
+							<ul class="nav flex-column treeview-menu bk-dark">
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">商品登録</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">商品一覧</a></li>
+				          	</ul>
+						</li>
+						<li class="nav-item treeview">
+							<a class="nav-link text-ccc" href="#">
+								<i class="fa fa-wrench" aria-hidden="true"></i><span class="menu-text">商品化</span>
+								<span class="pull-right-container">
+					              	<i class="fa fa-angle-left pull-right"></i>
+					            </span>
+							</a>
+							<ul class="nav flex-column treeview-menu bk-dark">
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">動作確認</a></li>
+				          	</ul>
+						</li>
+						<li class="nav-item treeview">
+							<a class="nav-link text-ccc" href="#">
+								<i class="fa fa-database" aria-hidden="true"></i><span class="menu-text">在庫管理</span>
+								<span class="pull-right-container">
+					              	<i class="fa fa-angle-left pull-right"></i>
+					            </span>
+							</a>
+							<ul class="nav flex-column treeview-menu bk-dark">
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">在庫照会</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">在庫取引管理台帳</a></li>
+				          	</ul>
+						</li>
+						<li class="nav-item treeview">
+							<a class="nav-link text-ccc" href="#">
+								<i class="fa fa-archive" aria-hidden="true"></i><span class="menu-text">販売管理</span>
+								<span class="pull-right-container">
+					              	<i class="fa fa-angle-left pull-right"></i>
+					            </span>
+							</a>
+							<ul class="nav flex-column treeview-menu bk-dark">
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">販売先管理</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">受注管理</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">Yahoo!かんたん決済入金確認</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">銀行入金確認</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">返品処理</a></li>
+				          	</ul>
+						</li>
+						<li class="nav-item treeview">
+							<a class="nav-link text-ccc" href="#">
+								<i class="fa fa-commenting-o" aria-hidden="true"></i><span class="menu-text">クレーム</span>
+								<span class="pull-right-container">
+					              	<i class="fa fa-angle-left pull-right"></i>
+					            </span>
+							</a>
+							<ul class="nav flex-column treeview-menu bk-dark">
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">クレーム</a></li>
+				          	</ul>
+						</li>
+						<li class="nav-item treeview">
+							<a class="nav-link text-ccc" href="#">
+								<i class="fa fa-line-chart" aria-hidden="true"></i><span class="menu-text">分析</span>
+								<span class="pull-right-container">
+					              	<i class="fa fa-angle-left pull-right"></i>
+					            </span>
+							</a>
+							<ul class="nav flex-column treeview-menu bk-dark">
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">商品化パート別作業時間</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">商品分類別販売分析</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">仕入先別販売分析</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">販売先別販売分析</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">長期滞留在庫表</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">滞留日数別在庫表</a></li>
+				          	</ul>
+						</li>
+						<li class="nav-item treeview">
+							<a class="nav-link text-ccc" href="#">
+								<i class="fa fa-cog" aria-hidden="true"></i><span class="menu-text">設定</span>
+								<span class="pull-right-container">
+					              	<i class="fa fa-angle-left pull-right"></i>
+					            </span>
+							</a>
+							<ul class="nav flex-column treeview-menu bk-dark">
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">ユーザー設定</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">マスタ設定</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">諸設定</a></li>
+					            <li class="nav-item"><a class="nav-link text-ccc" href="#">メッセージ一覧</a></li>
+				          	</ul>
+						</li>
+						
+						<!-- sidebar-toggle -->
+						<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+		        			<i class="fa fa-angle-double-left" aria-hidden="true"></i><span class="menu-text">折畳む</span>
+	      				</a>
+					</ul>
+				</nav>
+<!-- 				<main role="main" class="content-wrapper pt-3">
+					<h1>Dashboard</h1>
+
+					<h2>Section title</h2>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Header</th>
+									<th>Header</th>
+									<th>Header</th>
+									<th>Header</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1,001</td>
+									<td>Lorem</td>
+									<td>ipsum</td>
+									<td>dolor</td>
+									<td>sit</td>
+								</tr>
+								<tr>
+									<td>1,002</td>
+									<td>amet</td>
+									<td>consectetur</td>
+									<td>adipiscing</td>
+									<td>elit</td>
+								</tr>
+								<tr>
+									<td>1,003</td>
+									<td>Integer</td>
+									<td>nec</td>
+									<td>odio</td>
+									<td>Praesent</td>
+								</tr>
+								<tr>
+									<td>1,003</td>
+									<td>libero</td>
+									<td>Sed</td>
+									<td>cursus</td>
+									<td>ante</td>
+								</tr>
+								<tr>
+									<td>1,004</td>
+									<td>dapibus</td>
+									<td>diam</td>
+									<td>Sed</td>
+									<td>nisi</td>
+								</tr>
+								<tr>
+									<td>1,005</td>
+									<td>Nulla</td>
+									<td>quis</td>
+									<td>sem</td>
+									<td>at</td>
+								</tr>
+								<tr>
+									<td>1,006</td>
+									<td>nibh</td>
+									<td>elementum</td>
+									<td>imperdiet</td>
+									<td>Duis</td>
+								</tr>
+								<tr>
+									<td>1,007</td>
+									<td>sagittis</td>
+									<td>ipsum</td>
+									<td>Praesent</td>
+									<td>mauris</td>
+								</tr>
+								<tr>
+									<td>1,008</td>
+									<td>Fusce</td>
+									<td>nec</td>
+									<td>tellus</td>
+									<td>sed</td>
+								</tr>
+								<tr>
+									<td>1,009</td>
+									<td>augue</td>
+									<td>semper</td>
+									<td>porta</td>
+									<td>Mauris</td>
+								</tr>
+								<tr>
+									<td>1,010</td>
+									<td>massa</td>
+									<td>Vestibulum</td>
+									<td>lacinia</td>
+									<td>arcu</td>
+								</tr>
+								<tr>
+									<td>1,011</td>
+									<td>eget</td>
+									<td>nulla</td>
+									<td>Class</td>
+									<td>aptent</td>
+								</tr>
+								<tr>
+									<td>1,012</td>
+									<td>taciti</td>
+									<td>sociosqu</td>
+									<td>ad</td>
+									<td>litora</td>
+								</tr>
+								<tr>
+									<td>1,013</td>
+									<td>torquent</td>
+									<td>per</td>
+									<td>conubia</td>
+									<td>nostra</td>
+								</tr>
+								<tr>
+									<td>1,014</td>
+									<td>per</td>
+									<td>inceptos</td>
+									<td>himenaeos</td>
+									<td>Curabitur</td>
+								</tr>
+								<tr>
+									<td>1,015</td>
+									<td>sodales</td>
+									<td>ligula</td>
+									<td>in</td>
+									<td>libero</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</main> -->
+			</div>
+		</div>
+		<!-- jQuery 3.2.1 -->
+		<script src="jquery/jquery.min.js"></script>
+		<!-- popper -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<!-- Bootstrap 3.3.7 -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			$(window).on('resize', function(){
+				$('body').removeClass('sidebar-collapse').removeClass('d-sidebar-collapse');
+				$('.treeview').removeClass('menu-open');
+				$('.treeview-menu').animate( { height: 'hide' }, 'fast' );
+			});
+			$('.sidebar-toggle').on('click', function(){
+				var w = $(window).width();
+				$('.treeview').removeClass('menu-open');
+				$('.treeview-menu').animate( { height: 'hide' }, 'fast' );
+				if (w > 575) {
+					$('body').toggleClass('sidebar-collapse');
+				}else {
+					$('body').toggleClass('d-sidebar-collapse');
+				}
+			});
+			$('.treeview').on('click', function(){
+				var w = $(window).width();
+				if ($('body').hasClass('sidebar-collapse')) {
+					return;
+				}
+				if (!$('body').hasClass('d-sidebar-collapse') && w < 576) {
+					return;
+				}
+				$(this).toggleClass('menu-open');
+				$(this).find('.treeview-menu').animate( { height: 'toggle' }, 'slow' );
+			});
+
+		</script>
+	</body>
+</html>
